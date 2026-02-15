@@ -148,3 +148,32 @@ body {
     font-weight: 700;
     margin-top: 10px;
 }
+
+.btn-primary {
+    background-color: #0057a8 !important;
+    border-color: #0057a8 !important;
+}
+
+.btn-primary:hover {
+    background-color: #004485 !important;
+}
+
+.color-blue {
+    color: #0057a8 !important;
+}
+  /* Specific styles for the login centering */
+        .login-container {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f8f9fa;
+        }
+
+        .login-card {
+            width: 100%;
+            max-width: 400px;
+            padding: 2rem;
+            border-radius: 15px;
+            background: white;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05)};
