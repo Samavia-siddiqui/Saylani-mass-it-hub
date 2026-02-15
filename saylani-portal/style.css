@@ -1,0 +1,150 @@
+/* css :root {
+    --saylani-green: #66b032;
+    --saylani-blue: #0057a8;
+}
+
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bg-blue {
+    background-color: var(--saylani-blue) !important;
+}
+
+.color-blue {
+    color: var(--saylani-blue);
+}
+
+.btn-blue {
+    background-color: var(--saylani-blue);
+    color: white;
+    border: none;
+}
+
+.btn-blue:hover {
+    background-color: #004485;
+    color: white;
+}
+
+.btn-green {
+    background-color: var(--saylani-green);
+    color: white;
+    border: none;
+}
+
+.btn-green:hover {
+    background-color: #559429;
+    color: white;
+}
+
+.nav-pills .nav-link.active {
+    background-color: var(--saylani-green) !important;
+}
+
+.nav-pills .nav-link {
+    color: var(--saylani-blue);
+    font-weight: 600;
+}
+
+.card {
+    border-radius: 10px;
+}
+
+.badge-pending {
+    background-color: #ffc107;
+    color: #000;
+}
+
+.badge-submitted {
+    background-color: #17a2b8;
+    color: #fff;
+} */
+
+:root {
+    --saylani-green: #66b032;
+    --saylani-blue: #0057a8;
+    --sidebar-width: 250px;
+}
+
+body {
+    background-color: #f4f7f6;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: var(--sidebar-width);
+    height: 100vh;
+    position: fixed;
+    background: white;
+    border-right: 1px solid #eee;
+    padding: 20px;
+}
+
+.main-content {
+    margin-left: var(--sidebar-width);
+    padding: 40px;
+}
+
+.nav-link {
+    color: #666;
+    padding: 12px 15px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    background: #f0f0f0;
+    color: var(--saylani-blue);
+}
+
+.nav-link.active {
+    background: var(--saylani-green) !important;
+    color: white !important;
+}
+
+/* UI Elements */
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.btn-primary {
+    background-color: var(--saylani-blue);
+    border: none;
+}
+
+.btn-success {
+    background-color: var(--saylani-green);
+    border: none;
+}
+
+.color-blue {
+    color: var(--saylani-blue);
+}
+
+.badge-pending {
+    background: #fff4e5;
+    color: #ff9800;
+    border: 1px solid #ffe2b9;
+}
+
+.badge-resolved {
+    background: #e6f4ea;
+    color: #1e7e34;
+    border: 1px solid #c3e6cb;
+}
+
+/* Dashboard Cards */
+.stat-card {
+    padding: 20px;
+    text-align: left;
+}
+
+.stat-card h3 {
+    font-weight: 700;
+    margin-top: 10px;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard - Saylani Campus Portal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <h4 class="color-blue fw-bold mb-4">Saylani Portal</h4>
+        <nav class="nav flex-column"> <a class="nav-link active" href="index.html">Dashboard</a> <a class="nav-link"
+                href="lost-found.html">Lost & Found</a> <a class="nav-link" href="complaints.html">Complaints</a> <a
+                class="nav-link" href="volunteers.html">Volunteers</a> </nav>
+    </div>
+    <div class="main-content">
+        <div class="d-flex justify-content-between mb-4">
+            <h2>Dashboard Overview</h2> <button class="btn btn-primary">+ New Report</button>
+        </div>
+        <div class="row mb-4">
+            <div class="col-md-3">
+                <div class="card stat-card"> <small class="text-muted">Total Reports</small>
+                    <h3 id="totalReports">0</h3>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card stat-card"> <small class="text-muted">Active Complaints</small>
+                    <h3 id="activeComplaints">0</h3>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card stat-card"> <small class="text-muted">Items Matched</small>
+                    <h3>12</h3>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card stat-card"> <small class="text-muted">Events</small>
+                    <h3 id="totalVolunteers">0</h3>
+                </div>
+            </div>
+        </div>
+        <div class="card p-4">
+            <h5 class="mb-4">Recent Activity</h5>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Item/Complaint</th>
+                        <th>Category</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="recentActivityTable"> <!-- Data injected by script.js --> </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
